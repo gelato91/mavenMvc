@@ -2,7 +2,6 @@ package control;
 
 import java.io.IOException;
 
-import javax.activation.ActivationDataFlavor;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -10,8 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Action;
-import model.ActionData;
+import model2.Action;
+import model2.ActionData;
+
+
 
 /**
  * Servlet implementation class F_Controller
@@ -43,8 +44,9 @@ public class F_Controller extends HttpServlet {
 		String service = request.getRequestURI().substring(
 				(request.getContextPath()+"/board/").length());
 		System.out.println(service);
-		
+		System.out.println("할렐루야");
 		try {
+		
 			Action action = (Action)Class.forName("ttt."+service).newInstance();
 		
 			ActionData data = action.execute(request, response);

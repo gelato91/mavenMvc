@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-import model.Action;
-import model.ActionData;
-import model.BoardDAO;
-import model.BoardVO;
+import model2.Action;
+import model2.ActionData;
+import model2.BoardDAO;
+import model2.BoardVO;
 
 public class InsertReg implements Action{
 

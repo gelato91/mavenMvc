@@ -3,9 +3,9 @@ package ttt;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Action;
-import model.ActionData;
-import model.BoardDAO;
+import model2.Action;
+import model2.ActionData;
+import model2.BoardDAO;
 
 public class List implements Action{
 

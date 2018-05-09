@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-내가 board의 list다 이놈들아<br>
+컹스바컹스<br>
 <table border="">
 	<tr>
 		<td>번호</td>
