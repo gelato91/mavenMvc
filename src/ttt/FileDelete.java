@@ -5,10 +5,10 @@ import java.io.File;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model2.Action;
-import model2.ActionData;
-import model2.BoardDAO;
-import model2.BoardVO;
+import model.Action;
+import model.ActionData;
+import model.BoardDAO;
+import model.BoardVO;
 
 public class FileDelete implements Action {
 
@@ -38,7 +38,7 @@ public class FileDelete implements Action {
 			vo.setUpfile("");
 			
 			String path = request.getRealPath("up");
-			path = "F:\\mvcWork\\mvcJsp\\WebContent\\up";
+			path = "F:\\mvcWork\\mvcJsp2\\WebContent\\up";
 			
 			new File(path+"\\"+request.getParameter("upfile")).delete();
 			dao.fileDelete(vo.getId());	

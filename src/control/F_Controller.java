@@ -9,10 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model2.Action;
-import model2.ActionData;
-
-
+import model.Action;
+import model.ActionData;
 
 /**
  * Servlet implementation class F_Controller
@@ -20,7 +18,7 @@ import model2.ActionData;
 @WebServlet("/board/*")
 @MultipartConfig(
 	location="C:\\tomcat\\temp",	
-	maxFileSize=1024*5000,
+	maxFileSize=1024*5000*1000,
 	maxRequestSize=1024*1024*100,
 	fileSizeThreshold=1024*1024*10
 )
@@ -46,7 +44,7 @@ public class F_Controller extends HttpServlet {
 		System.out.println(service);
 		System.out.println("할렐루야");
 		try {
-		
+
 			Action action = (Action)Class.forName("ttt."+service).newInstance();
 		
 			ActionData data = action.execute(request, response);

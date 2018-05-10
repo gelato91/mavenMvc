@@ -3,8 +3,8 @@ package ttt;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model2.Action;
-import model2.ActionData;
+import model.Action;
+import model.ActionData;
 
 public class DeleteForm implements Action{
 

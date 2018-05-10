@@ -3,10 +3,10 @@ package ttt;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model2.Action;
-import model2.ActionData;
-import model2.BoardDAO;
-import model2.BoardVO;
+import model.Action;
+import model.ActionData;
+import model.BoardDAO;
+import model.BoardVO;
 
 public class ModifyReg implements Action {
 

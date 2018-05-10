@@ -8,8 +8,8 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model2.Action;
-import model2.ActionData;
+import model.Action;
+import model.ActionData;
 
 public class FileDown implements Action{
 	@Override
@@ -20,7 +20,7 @@ public class FileDown implements Action{
 		System.out.println(fileName);
 		
 		String path = request.getRealPath("up");
-		path = "F:\\mvcWork\\mvcJsp\\WebContent\\up";
+		path = "F:\\mvcWork\\mvcJsp2\\WebContent\\up";
 		
 		
 		

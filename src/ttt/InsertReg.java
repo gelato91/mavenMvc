@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-import model2.Action;
-import model2.ActionData;
-import model2.BoardDAO;
-import model2.BoardVO;
+import model.Action;
+import model.ActionData;
+import model.BoardDAO;
+import model.BoardVO;
 
 public class InsertReg implements Action{
 
@@ -75,7 +75,7 @@ public class InsertReg implements Action{
 		String exp = fileName.substring(pos);
 		
 		String path = request.getRealPath("up")+"\\";
-		path = "F:\\mvcWork\\mvcJsp\\WebContent\\up\\";
+		path = "F:\\mvcWork\\mvcJsp2\\WebContent\\up\\";
 		
 		int cnt =0;
 		
