@@ -112,9 +112,7 @@
 		  	<update>true</update>
 		  </configuration>
 		</plugin>
-      
-      
-      
+  
     </plugins>
   </build>
   
